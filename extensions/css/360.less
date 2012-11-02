@@ -1,0 +1,36 @@
+/*
+ *  This Slideshow demonstrates the usage of pointer-events and transitions for easy cross-fades.
+ *  Click the dots or the image itself to browse through the photos. On touch devices swiping is 
+ *  supported as well.
+ *
+ *  (iPad, Chrome, Safari, Firefox and IE7+)
+ *
+ */
+
+@dimX:640px;
+@dimY:378px;
+
+#threesixty{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: @dimX;
+    height: @dimY;
+    margin: @dimY/-2 0 0 @dimX/-2;
+    background: @boilerplate-white;
+    .status{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        background: @boilerplate-black;
+        #boilerplate-transition > .short;
+        &.hide{
+            opacity: 0;
+            width: 100% !Important;
+            .no-opacity &{
+                display: none;
+            }
+        }
+    }
+}

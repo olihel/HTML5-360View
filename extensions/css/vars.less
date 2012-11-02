@@ -1,0 +1,27 @@
+//base typo colors
+@boilerplate-black:#000;
+@boilerplate-white:#fff;
+@boilerplate-grey:#ccc;
+
+//background border colors
+@boilerplate-body:#E54B25;
+
+@boilerplate-image-path:"../../images";
+@boilerplate-font-path:"../../fonts";
+
+// transition -----------------------------------------------------------------
+
+.boilerplate-transition(@val1:0s,@val2:all,@val3:ease-out) {
+  @style:@val2 @val1 @val3;
+  -webkit-transition: @style;
+  -moz-transition: @style;
+  -ms-transition: @style;
+  -o-transition: @style;
+  transition: @style;
+}
+
+#boilerplate-transition{
+  .short(){
+    .boilerplate-transition(.5s);
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>360° View</title>
+  <meta name="language" content="en" />
+
+  <!--[if !IE | IE 9]><!-->
+  <link rel="stylesheet/less" type="text/css" href="extensions/css/stylesheet.less" media="screen,print" />
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.1/less.min.js"></script>
+  <!-- <![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" media="screen" href="extensions/css/stylesheet.css" /><![endif]-->
+</head>
+
+<body>
+  <div id="container">
+    <div id="threesixty" class="js_360">
+        <canvas class="canvas" width="640" height="378" data-time="1200" data-views="72" data-src="//is.s2.de/640x378/F/0/{{i}}"></canvas>
+        <div class="status"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="extensions/js/360.js"></script>
+</body>
+</html>
